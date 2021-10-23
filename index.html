@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body{
+                background: rgb(93, 93, 150);
+            }
+            div input{
+                display: block;
+                width: 347px;
+                height: 34px;
+                margin-left: 105px;
+                color: #999999;
+                text-shadow: 0 0 1px #ffffff;     
+                background: -webkit-gradient(linear, left top, left 15, from(#FFFFFF), color-stop(4%, #f4f4f4), to(#FFFFFF));
+                padding: 8px 6px;
+                border: 1px solid #ddd;
+                outline: none;
+            }
+            .li > input:focus{
+                border: none ;
+            }
+
+            div textarea{
+                display: block;
+                width: 347px;
+                height: 138px;
+                margin-left: 105px;
+                background: -webkit-gradient(linear, left top, left 15, from(#FFFFFF), color-stop(4%, #f4f4f4), to(#FFFFFF));
+            }
+            div select{
+                bottom: 19px;
+                width: 355px;
+                height: 34px;
+                background: -webkit-gradient(linear, left top, left 15, from(#FFFFFF), color-stop(4%, #f4f4f4), to(#FFFFFF));
+ 
+            }
+            .l1 > label{
+             color: #000;
+            
+           }
+        </style>
+    </head>
+    <body>
+        <form action="">
+            <h2>Contact Us</h2>
+            <div class="l1">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <label class="" for="email"> Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="ph">Phone</label>
+                <input type="text" name="ph" id="ph">
+            </div>
+            <div class="contact" >
+                <label for="cr">Contact Reason</label>
+                <select  name="cr" id="cr">
+                    <optio></option>
+                    <option value="gen-inqure"> Genral inqure</option>
+                    <option value="ps">Product support</option>
+                    <option value="nb">New business</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div>
+                <label for="msg">Message</label>
+            <textarea name="msg" id="msg" cols="15" rows="5" required="required "></textarea>
+           </div>
+        </form>
+    </body>
+</html>
